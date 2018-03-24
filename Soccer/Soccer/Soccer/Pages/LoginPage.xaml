@@ -40,9 +40,9 @@
                 <!--/Login-->
                 <ActivityIndicator IsRunning="{Binding IsRunning}"></ActivityIndicator>
                 <StackLayout Padding="30,0,30,0" Orientation="Vertical">
-                    <Button Command="{Binding LoginComand}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Orange" TextColor="White" Text="Login"></Button>
-                    <Button Command="{Binding LoginFacebookComand}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Orange" TextColor="White" Text="Login with Facebook"></Button>
-                    <Button Command="{Binding RegisterComand}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Orange" TextColor="White" Text="Register"></Button>
+                    <Button Command="{Binding LoginComand}" IsEnabled="{Binding IsEnable}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Orange" TextColor="White" Text="Login"></Button>
+                    <Button Command="{Binding LoginFacebookComand}" IsEnabled="{Binding IsEnable}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Orange" TextColor="White" Text="Login with Facebook"></Button>
+                    <Button Command="{Binding RegisterComand}" IsEnabled="{Binding IsEnable}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Orange" TextColor="White" Text="Register"></Button>
                     <Label Text="Forgot you Password?" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
